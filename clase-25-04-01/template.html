@@ -9,10 +9,15 @@
 </head>
 <!--
 bootstrap:
-background-color celeste = bg-primary
-text-align = text-center
-padding 5px= p-5
-color text = text-white
+* background-color celeste = bg-primary
+* text-align = text-center
+* padding 5px= p-5
+* color text = text-white
+* margin-top 5px = mt-5
+* para GRID (para el contenedor usar class [container], para
+fila [row] y columnas [col])
+* breakpoint de bootstrap significa que dependera al tamanio de pantalla sm (small) 
+* Que significa el numero 4 del col-sm-4? Significa la cantidad de espacio que va a ocupar mi columna
 -->
 <body>
     <div class="p-5 bg-primary text-white text-center">
@@ -22,17 +27,61 @@ color text = text-white
 
     <h2>Formulario con bootstrap</h2>
 
+    <h4 class="p-1">Formulario con metodo POST</h4>
+
+    <div class="container mt-5">
+        <form action="./action.php" method="post">
+            <div class="row m-1">
+                <div class="col-sm-1">
+                    <label for="nombre">Nombre:</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="nombre" id="nombre" value="Jesica Salva">
+                </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-sm-1">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="email" name="email" id="email" value="jesi@mail.com">
+                </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-sm-1">
+                    <label for="fecha">Fecha:</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+            </div>
+
+            <div class="row m-1">
+                <div class="col-sm-1">
+                    <label for="file">Archivo:</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="file" name="file" id="file">
+                </div>
+            </div>
+
+            <div class="row m-1">
+                <div class="col-sm-4">
+                    <input type="submit" class="bg-primary" value="Enviar">
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+<!--
     <h4 class="p-1">Formulario con metodo GET</h4>
     <form action="./action.php" method="get">
         <input type="text" name="nombre" id="nombre">
         <input type="submit" value="Enviar">
     </form>
-
-    <h4 class="p-1">Formulario con metodo POST</h4>
-    <form action="./action.php" method="post">
-        <input type="text" name="nombre" id="nombre">
-        <input type="submit" value="Enviar">
-    </form>
+-->
+    
     
 </body>
 </html>
