@@ -20,7 +20,7 @@ class MyDatabase{
             $config["user"],
             $config["pass"],
             $config["db"],
-            $config["port"]
+            $config["puerto"]
         );
 
     }
