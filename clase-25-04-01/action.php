@@ -1,4 +1,5 @@
 <?php
+/**ver hora 2:02 1era clase  */
 /*para obtener el valor de la variable que fue enviada por la url */
 /*if(isset($_GET['nombre'])){
     echo "Nombre: ".$_GET['nombre'];
